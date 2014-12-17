@@ -126,5 +126,8 @@ function validateForm(){
         $this.empty().append('<div class="pushmessage"><p>Спасибо,</p><p>Ваше сообщение успешно отправлено!</p></div>');
         
       }
+      $('#send').bind('click', function(){
+        ajaxSend($this.find('[name=name]').val(),$this.find('[name=email]').val(),$this.find('[name=message]').val());
+      });
 
 });
