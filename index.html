@@ -12,6 +12,16 @@
   <meta name="copyright" content="alex polozhentsev">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/email.feedback.js"></script>
+<link rel="stylesheet" type="text/css" href="css/email.feedback.css">
+<script type="text/javascript">
+      $(window).load(function() {
+        $('#feedback').feedback({'theme':'classic'});       
+      });
+    </script>
  </head>
  <body>
   <div class="wrap">
@@ -208,13 +218,46 @@
    
  
 
-
+       <center>   
+        <!-- Форма обратной связи / BLOGZOR.RU -->
+        <div id="feedback">
+          
+          <div class="pushmessage" id="jdisabled">Для того, чтобы воспользоваться формой обратной связи, включите, пожалуйста, javascript в Вашем браузере</div>
+          
+          <div id="jenable" class="turnoff">
+            <div class="field" id="name">
+              <div class="field-container">
+                <div class="field-name nameicon"><label for="iname">Ваше имя</label></div>
+                <div class="input-container"><input type="text" name="name" id="iname" placeholder="enter your name here" class="checkfield"></div>
+              </div>
+            </div>
+            
+            <div class="field" id="email">
+              <div class="field-container">
+                <div class="field-name emailicon"><label for="iemail">Ваша почта</label></div>
+                <div class="input-container"><input type="text" name="email" id="iemail" placeholder="enter your email here" class="checkfield"></div>
+              </div>
+            </div>
+            
+            <div class="field" id="message">
+              <div class="message-container">
+                <div class="textarea-name messageicon"><label for="imessage">Сообщение</label></div>
+                <div class="textarea-container"><textarea name="message" id="imessage" row="35" class="checkfield"></textarea></div>
+              </div>
+            </div>
+            
+            <div class="buttons">
+              <a class="button sendicon" id="send">Отправить</a>
+            </div>
+          </div>
+          
+        </div>
+        <!--  -->
+       </center>
 
    </div>  
  </div>     
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
 
  </body>
 </html>

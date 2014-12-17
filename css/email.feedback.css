@@ -1,0 +1,261 @@
+#feedback{
+	width: 600px;
+	background-color: #E8E8E8;
+	padding: 20px;
+	font-family: "Segoe UI",Tahoma,Arial,Helvetica,sans-serif;
+}
+#feedback .hint-container{
+	width: 100%;
+	background-color: #2B5797;
+	border: 1px solid #2B5797;
+	color: #FFFFFF;
+	font-size: 12px;
+	text-align: left;
+}
+#feedback .hint-container .hint{
+	padding: 2px 2px 2px 5px;
+}
+#feedback .field{
+	margin: 0px 0px 10px 0px;
+}
+#feedback .field-container{
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	border: 1px solid #00A300;
+	padding: 0px;
+	margin: 0px;
+}
+#feedback .field-name{
+	width: 25%;
+	height: 100%;
+	float: left;
+	text-transform: uppercase;
+	background-color: #00A300;
+	color: #fff;
+	text-align: left;
+}
+#feedback .field-name label{
+	position: relative;	
+	display: block;
+	padding: 10px 0px 0px 32px;
+}
+#feedback .input-container{
+	float: left;
+	width: 74%;
+	height: 100%;
+	text-align: center;
+}
+#feedback input{
+	height: 100%;
+	width: 99%;	
+	background-color: #fff;
+	font-size: 15px;
+	padding: 0px 4px 0px 4px;
+	border: 0px;
+}
+#feedback input:focus { 
+	outline: none; 
+}  
+#feedback .message-container{
+	width: 100%;
+	border: 1px solid #FFC40D;
+}
+#feedback .message-container .textarea-name{
+	width: 100%;
+	height: 40px;
+	background-color: #FFC40D;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: left;
+}
+#feedback .message-container .textarea-name label{
+	position: relative;	
+	display: block;
+	padding: 8px 0px 0px 32px;
+	
+}
+#feedback .textarea-container{
+	width: 100%;
+	height: 140px;
+	background-color: #fff;
+	padding: 0px;
+	margin: 0px;
+}
+#feedback textarea{
+	width: 95%;
+	height: 80%;
+	border: 0px;
+	padding: 10px;
+	font-size: 15px;
+	font-family: "Segoe UI",Tahoma,Arial,Helvetica,sans-serif;
+}
+#feedback textarea:focus { 
+	outline: none; 
+}
+#feedback textarea[disabled]{
+	background-color: #FFFFFF;
+}
+#feedback .buttons{
+	width: 100%;
+	text-align: right;
+}
+#feedback .buttons .button{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 18px;
+	background-color: #2D89EF;	
+	color: #fff;
+	padding: 8px 20px 8px 48px;	
+}
+#feedback .buttons .button:hover{
+	background-color: #4EA0DB;
+}
+#feedback .error{
+	width: 100%;
+	background-color: #F7C3C3;
+	border: 1px dashed #3D0000;
+	color: #3D0000;
+	text-align: left;	
+	margin: 5px 0px 0px 0px;
+}
+#feedback .error .message{
+	padding: 10px 10px 10px 32px;
+	font-size: 12px;
+}
+#feedback .error .message ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+#feedback .nameicon{
+	background-image: url('../img/field_name.png');	
+	background-repeat: no-repeat;
+	background-position: 2px center;
+}
+#feedback .emailicon{
+	background-image: url('../img/field_email.png');	
+	background-repeat: no-repeat;
+	background-position: 2px center;
+}
+#feedback .messageicon{
+	background-image: url('../img/field_message.png');	
+	background-repeat: no-repeat;
+	background-position: 2px center;
+}
+#feedback .alerticon{
+	background-image: url('../img/alert.png');	
+	background-repeat: no-repeat;
+	background-position: 2px center;
+}
+#feedback #send.sendicon{
+	background-image: url('../img/btn_arrow.png');	
+	background-repeat: no-repeat;
+	background-position: 8px center;
+}
+#feedback .loading{
+	display: inline-block;
+	font-size: 18px;	
+	color: #5E5E5E;
+	padding: 8px 20px 8px 48px;
+}
+#feedback .pushmessage{
+	background-color: #B91D47;
+	color: #FFFFFF;
+	padding: 20px;
+}
+#feedback p{
+	padding: 3px;
+	margin: 0px;
+}
+#feedback .turnon{
+	display: block;
+}
+#feedback .turnoff{
+	display: none;
+}
+/*---Themes---*/
+/*Grey Theme*/
+#feedback .greyField{
+	background-color: #8E8E8E !important;
+}
+#feedback .greyBorder{
+	border: 1px solid #8E8E8E !important;
+}
+#feedback .greyTextArea{
+	background-color: #8E8E8E !important;
+}
+#feedback .greyTextAreaBorder{
+	border: 1px solid #8E8E8E !important;
+}
+#feedback .greyBtn{
+	background-color: #606060 !important;
+}
+#feedback .greyBtn:hover{
+	background-color: #8E8E8E !important;
+}
+/**/
+/*Purple Theme*/
+#feedback .purpleField{
+	background-color: #9F00A7 !important;
+}
+#feedback .purpleBorder{
+	border: 1px solid #9F00A7 !important;
+}
+#feedback .purpleTextArea{
+	background-color: #9F00A7 !important;
+}
+#feedback .purpleTextAreaBorder{
+	border: 1px solid #9F00A7 !important;
+}
+#feedback .purpleBtn{
+	background-color: #9F00A7 !important;
+}
+#feedback .purpleBtn:hover{
+	background-color: #C244C9 !important;
+}
+/**/
+/*Sweety Theme*/
+#feedback .sweetyField{
+	background-color: #FF0000 !important;
+}
+#feedback .sweetyBorder{
+	border: 1px solid #FF6347 !important;
+}
+#feedback .sweetyTextArea{
+	background-color: #FF0000 !important;
+}
+#feedback .sweetyTextAreaBorder{
+	border: 1px solid #FF0000 !important;
+}
+#feedback .sweetyBtn{
+	background-color: #FF0000 !important;
+}
+#feedback .sweetyBtn:hover{
+	background-color: #FF4500 !important;
+}
+/**/
+/*PeachPuff Theme*/
+#feedback .peachpuffField{
+	background-color: #CDB38B !important;
+	color: #8B4C39!important;
+}
+#feedback .peachpuffBorder{
+	border: 1px solid #CDAF95 !important;
+}
+#feedback .peachpuffTextArea{
+	background-color: #FFDAB9 !important;
+	color: #8B4C39 !important;
+}
+#feedback .peachpuffTextAreaBorder{
+	border: 1px solid #CDAF95 !important;
+}
+#feedback .peachpuffBtn{
+	background-color: #CDB38B !important;
+	color: #8B4C39!important;
+}
+#feedback .peachpuffBtn:hover{
+	background-color: #CD8162 !important;
+}
+/**/
+/*-----------*/
