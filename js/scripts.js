@@ -105,7 +105,7 @@ function validateForm(){
   function ajaxSend(userfrom, emailfrom, message){    
         DisableFields();
         $this.find('.form-btn').empty().append('<div class="loading">Отправка сообщения...</div>');
-        var url = settings.sender;
+        var url = '../php/sendmail.php';
         $.ajax({
           url: url,
           type: "POST",
