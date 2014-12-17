@@ -20,7 +20,7 @@ var lastId,
       if (item.length) { return item; }
     });
 
-   $('.menu li a').click( function(){ 
+   $('.menu-item-link').click( function(){ 
       var scroll_el = $(this).attr('href'); 
         if ($(scroll_el).length != 0) { 
       $('html, body').stop().animate({ scrollTop: $(scroll_el).offset().top }, 750);
@@ -100,8 +100,31 @@ function validateForm(){
         if(inputVal[4] == ""){
             $('#messageInput').after('<span class="error"> Please enter your ' + inputMessage[4] + '</span>').addClass('err-border');
         }       
-}   
+}  
 
-
+  function ajaxSend(userfrom, emailfrom, message){    
+        DisableFields();
+        $this.find('.form-btn').empty().append('<div class="loading">Отправка сообщения...</div>');
+        var url = settings.sender;
+        $.ajax({
+          url: url,
+          type: "POST",
+          data: {userfrom: userfrom, emailfrom: emailfrom, message: message},
+          dataType: "text",
+          success: function(ret) {
+            EnableFields();
+            $('#send').removeClass('loadinicon').addClass('sendicon');
+            if(ret==''){        
+              $this.empty().append('<div class="pushmessage"><p>Спасибо,</p><p>Ваше сообщение успешно отправлено!</p></div>');
+            } else {
+              $this.empty().append('<div class="pushmessage">'+ret+'</div>');
+            }
+          },
+          error: function(xhr, ajaxOptions, thrownError) { jAlert('Ошибка запроса', 'Ошибка', 'Продолжить'); }
+        });
+        EnableFields();
+        $this.empty().append('<div class="pushmessage"><p>Спасибо,</p><p>Ваше сообщение успешно отправлено!</p></div>');
+        
+      }
 
 });

@@ -1,6 +1,6 @@
 $(document).ready(function ()
     {
-	$("#myForm .input_button").click(validate);
+	$("#send").click(validate);
 	
 	function getCookie(name) { var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)")); return matches ? decodeURIComponent(matches[1]) : undefined;} 
 	
@@ -8,33 +8,33 @@ $(document).ready(function ()
 	    {
 		var isValid = true;
 		
-		if ($(".name").val().length==0){
-       $(".name").attr("placeholder", "*ааВаЕаДаИбаЕ аВаАбаЕ аИаМб");
+		if ($(".form-name").val().length==0){
+       $(".form-name").attr("placeholder", "*ааВаЕаДаИбаЕ аВаАбаЕ аИаМб");
        isValid = false;
    }  
    
-   if ($(".email").val().length==0){
-       $(".email").attr("placeholder", "*ааВаЕаДаИбаЕ аВаАб Email");
+   if ($(".form-email").val().length==0){
+       $(".form-email").attr("placeholder", "*ааВаЕаДаИбаЕ аВаАб Email");
           isValid = false;
    }  
-   if ($(".message").val().length==0){
-       $(".message").attr("placeholder", "*ааВаЕаДаИбаЕ аВаАбаЕ баОаОаБбаЕаНаИаЕ");
+   if ($(".form-textarea").val().length==0){
+       $(".form-textarea").attr("placeholder", "*ааВаЕаДаИбаЕ аВаАбаЕ баОаОаБбаЕаНаИаЕ");
           isValid = false;
    }  
 		            
 		if(isValid)
 		    {
-			fpath = $('#myForm .path').val();
-			var msg   = $('#myForm').serialize();
+			fpath = $('.form .path').val();
+			var msg   = $('.form').serialize();
 			$.ajax({
 			    type: 'POST',
 			    url: fpath,
 			    data: msg,
 			    success: function(data) {
-				$(".name").val('');
-				$(".email").val('');
+				$(".form-name").val('');
+				$(".form-email").val('');
 				$(".subject").val('');
-				$(".message").val('');
+				$(".form-textarea").val('');
 			    },
 			    error:  function(xhr, str){
 				alert('ааОаЗаНаИаКаЛаА аОбаИаБаКаА: ' + xhr.responseCode);
