@@ -135,6 +135,7 @@ function validateForm(){
     $('#menu').slideToggle('slow', function() {
       $('.menu-item-link').click(function(){
       $('#menu').slideUp('fast');
+      
    });
  });
 
