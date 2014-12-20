@@ -472,11 +472,13 @@ body {
   transform: scale(1.02);
 }
 .menu-btn .fa{
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.25em;
   margin: 0 auto;
   text-align: center;
-  font: 1.3em 'FontAwesome';
-  color: #6298DA;
-  width: 1.25em;
+  font: 1.3em/1.3em 'FontAwesome';
+  color: #6298DA; 
 }
 @media (min-width: 480px) and (max-width: 649px) {
   .wrap,  .wrap-container{
@@ -598,13 +600,13 @@ body {
   padding-top: 5px;
 }
 .floating {
- width: 90px;
+  width: 90px;
 }
 .fixed {
- position: fixed;
- top: 0; 
- z-index: 10; 
- padding-top: 0;
+  position: fixed;
+  top: 0; 
+  z-index: 10; 
+  padding-top: 0;
 }
 .menu-item a .fa {
   font: 2.5em 'FontAwesome';
@@ -630,11 +632,8 @@ body {
 .contacts{
   width: 35%;
 }
-.menu-text{
+.menu-text, .menu-btn{
   display: none;
-}
-.menu-btn{
-   display: none;
 }
 }
 
