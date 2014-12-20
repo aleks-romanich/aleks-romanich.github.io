@@ -130,4 +130,14 @@ function validateForm(){
         ajaxSend($this.find('[name=name]').val(),$this.find('[name=email]').val(),$this.find('[name=message]').val());
       });
 
+
+ $('.menu-btn').click(function(){
+    $('#menu').slideToggle('slow', function() {
+      $('.menu-item-link').click(function(){
+      $('#menu').slideUp('fast');
+   });
+ });
+
+ });
+
 });

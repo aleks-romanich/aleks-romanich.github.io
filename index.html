@@ -12,34 +12,22 @@
   <meta name="copyright" content="alex polozhentsev">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
-<script type="text/javascript" src="js/email.feedback.js"></script>
-<link rel="stylesheet" type="text/css" href="css/email.feedback.css">
-<script type="text/javascript">
-      $(window).load(function() {
-        $('#feedback').feedback({'theme':'classic'});       
-      });
-    </script>
  </head>
  <body>
   <div class="wrap">
-   
-
-    <ul class="menu row floating" id="menu">
-          <li class="menu-item active"><a href="#home" class="menu-item-link" title="home"><i class="fa fa-home"></i></a></li>
-          <li class="menu-item"><a href="#about" class="menu-item-link " title="About me"><i class="fa fa-male"></i></a></li>
-          <li class="menu-item"><a href="#portfolio" class="menu-item-link" title="Portfolio"><i class="fa fa-file-code-o"></i></a></li>
-          <li class="menu-item"><a href="#contacts" class="menu-item-link " title="Contacts"><i class="fa fa-envelope-o"></i></a></li>
-    </ul>
-    
-    
-  
+    <nav>
+         <div class="menu-btn"><i class="fa fa-navicon"></i></div>
+         <ul class="menu row floating" id="menu">
+               <li class="menu-item active"><a href="#home" class="menu-item-link" title="home"><i class="fa fa-home"></i><span class="menu-text">home</span></a></li>
+               <li class="menu-item"><a href="#about" class="menu-item-link " title="About me"><i class="fa fa-male"></i><span class="menu-text">about</span></a></li>
+               <li class="menu-item"><a href="#portfolio" class="menu-item-link" title="Portfolio"><i class="fa fa-file-code-o"></i><span class="menu-text">portfolio</span></a></li>
+               <li class="menu-item"><a href="#contacts" class="menu-item-link " title="Contacts"><i class="fa fa-envelope-o"></i><span class="menu-text">contacts</span></a></li>
+         </ul>
+    </nav>
       <div class="wrap-container">
-       <div id="home">
-          <p class="home-description">Hi everyone! Welcome to my portfolio: here you can take a look at some of my works on front-end development.
-          </p>
+       <section id="home">
+          <h1 class="home-description">Hi everyone! Welcome to my portfolio: here you can take a look at some of my works on front-end development.
+          </h1>
           <p class="home-description1"> My name is Aleksandr. I'm from Crimea and i'm 25 years old. Currently living and working as a front-end developer in Simpheropol, Crimea. I love web development and being able to make something useful for people. </p>
           <div class="home-lcol">
            <p class="content-description">Markup</p>
@@ -66,9 +54,9 @@
           </ul>
          </div>
          <div class="clearfix"></div>
-       </div>
+       </section>
     
-       <div id="about">
+       <section id="about">
           <h2 class="content-title">about</h2>
           <img src="img/photo.jpg" alt="" class="about-img">
           <ul class="about-list">
@@ -93,9 +81,9 @@
               <li><span class="about-list-title">Hobby</span></li>
               <li>travelling, hiking, tourism</li>
           </ul>  
-       </div>
+       </section>
     
-      <div id="portfolio">
+      <section id="portfolio">
           <h2 class="content-title">Portfolio</h2>
           <div class="portfolio row">
                   <div class="view view-ninth">
@@ -195,9 +183,9 @@
                     </div>
                 </div>
             </div>  
-       </div>
+       </section>
 
-       <div id="contacts">
+       <section id="contacts">
           <h2 class="content-title">contacts</h2>
           <p class="content-description">You can contact me in any way you like:</p>
           <ul class="contacts">
@@ -211,53 +199,10 @@
             <textarea class="form-textarea"   placeholder="message" name="message" id="messageInput"></textarea>
             <button  class="form-btn submit" id="send">send</button>
           </form>
-       </div>
-
-
- 
-   
- 
-
-       <center>   
-        <!-- Форма обратной связи / BLOGZOR.RU -->
-        <div id="feedback">
-          
-          <div class="pushmessage" id="jdisabled">Для того, чтобы воспользоваться формой обратной связи, включите, пожалуйста, javascript в Вашем браузере</div>
-          
-          <div id="jenable" class="turnoff">
-            <div class="field" id="name">
-              <div class="field-container">
-                <div class="field-name nameicon"><label for="iname">Ваше имя</label></div>
-                <div class="input-container"><input type="text" name="name" id="iname" placeholder="enter your name here" class="checkfield"></div>
-              </div>
-            </div>
-            
-            <div class="field" id="email">
-              <div class="field-container">
-                <div class="field-name emailicon"><label for="iemail">Ваша почта</label></div>
-                <div class="input-container"><input type="text" name="email" id="iemail" placeholder="enter your email here" class="checkfield"></div>
-              </div>
-            </div>
-            
-            <div class="field" id="message">
-              <div class="message-container">
-                <div class="textarea-name messageicon"><label for="imessage">Сообщение</label></div>
-                <div class="textarea-container"><textarea name="message" id="imessage" row="35" class="checkfield"></textarea></div>
-              </div>
-            </div>
-            
-            <div class="buttons">
-              <a class="button sendicon" id="send">Отправить</a>
-            </div>
-          </div>
-          
-        </div>
-        <!--  -->
-       </center>
-
+       </section>
    </div>  
  </div>     
-
-
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
  </body>
 </html>

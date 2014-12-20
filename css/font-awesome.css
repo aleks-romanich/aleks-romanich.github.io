@@ -1,9 +1,5 @@
-/*!
- *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
-/* FONT PATH
- * -------------------------- */
+
+
 @font-face {
   font-family: 'FontAwesome';
   src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
@@ -30,12 +26,6 @@
 }
 .fa-3x {
   font-size: 3em;
-}
-.fa-4x {
-  font-size: 4em;
-}
-.fa-5x {
-  font-size: 5em;
 }
 .fa-fw {
   width: 1.28571429em;
@@ -178,7 +168,11 @@
 .fa-file-code-o:before {
   content: "\f1c9";
 }
-
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "\f0c9";
+}
 
 
 
