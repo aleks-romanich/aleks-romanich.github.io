@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Nixie+One|Tangerine");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, main, nav, section {
+  display: block; }
+
+body {
+  font-family: 'Tangerine', cursive;
+  line-height: 1;
+  font-size: 100%; }
+
+a {
+  text-decoration: none; }
+
+input,
+textarea {
+  resize: none;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Tangerine', cursive;
+  font-family: 'Nixie One', cursive; }
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #555;
+  margin: 100px; }
+
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #555;
+  margin: 0 auto;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 20px #ddd, 20px 20px 20px #777;
+  box-shadow: inset 0 0 20px #ddd, 20px 20px 20px #777; }
+  .timer__hours {
+    border-right: 1px dashed #333; }
+  .timer__minutes {
+    border-right: 1px dashed #333; }
+
+.timer-alltime, .timer__hours, .timer__minutes, .timer__seconds {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+  font-size: 2em;
+  color: #eee;
+  text-align: center;
+  text-shadow: 1px 2px 2px black, 0 0 2em #777;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s; }
