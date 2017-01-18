@@ -102,34 +102,34 @@ function validateForm(){
         }
 }
 
-  function ajaxSend(userfrom, emailfrom, message){
-        DisableFields();
-        $this.find('.form-btn').empty().append('<div class="loading">Отправка сообщения...</div>');
-        var url = '../php/sendmail.php';
-        $.ajax({
-          url: url,
-          type: "POST",
-          data: {userfrom: userfrom, emailfrom: emailfrom, message: message},
-          dataType: "text",
-          success: function(ret) {
-            EnableFields();
-            $('#send').removeClass('loadinicon').addClass('sendicon');
-            if(ret==''){
-              $this.empty().append('<div class="pushmessage"><p>Спасибо,</p><p>Ваше сообщение успешно отправлено!</p></div>');
-            } else {
-              $this.empty().append('<div class="pushmessage">'+ret+'</div>');
-            }
-          },
-          error: function(xhr, ajaxOptions, thrownError) { jAlert('Ошибка запроса', 'Ошибка', 'Продолжить'); }
-        });
-        EnableFields();
-        $this.empty().append('<div class="pushmessage"><p>Спасибо,</p><p>Ваше сообщение успешно отправлено!</p></div>');
-
-      }
-      $('#send').bind('click', function(){
-        ajaxSend($this.find('[name=name]').val(),$this.find('[name=email]').val(),$this.find('[name=message]').val());
-      });
-
+  // function ajaxSend(userfrom, emailfrom, message){
+  //       DisableFields();
+  //       $this.find('.form-btn').empty().append('<div class="loading">Отправка сообщения...</div>');
+  //       var url = '../php/sendmail.php';
+  //       $.ajax({
+  //         url: url,
+  //         type: "POST",
+  //         data: {userfrom: userfrom, emailfrom: emailfrom, message: message},
+  //         dataType: "text",
+  //         success: function(ret) {
+  //           EnableFields();
+  //           $('#send').removeClass('loadinicon').addClass('sendicon');
+  //           if(ret==''){
+  //             $this.empty().append('<div class="pushmessage"><p>Спасибо,</p><p>Ваше сообщение успешно отправлено!</p></div>');
+  //           } else {
+  //             $this.empty().append('<div class="pushmessage">'+ret+'</div>');
+  //           }
+  //         },
+  //         error: function(xhr, ajaxOptions, thrownError) { jAlert('Ошибка запроса', 'Ошибка', 'Продолжить'); }
+  //       });
+  //       EnableFields();
+  //       $this.empty().append('<div class="pushmessage"><p>Спасибо,</p><p>Ваше сообщение успешно отправлено!</p></div>');
+  //
+  //     }
+  //     $('#send').bind('click', function(){
+  //       ajaxSend($this.find('[name=name]').val(),$this.find('[name=email]').val(),$this.find('[name=message]').val());
+  //     });
+  //
 
  $('.menu-btn').click(function(){
     $('#menu').slideToggle('slow', function() {

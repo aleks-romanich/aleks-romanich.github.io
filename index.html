@@ -190,13 +190,14 @@
             <li class="contacts-item"><i class="fa fa-envelope-o"></i><a href="mailto:my.klever@gmail.com" target="_blank">my.klever@gmail.com</a></li>
           </ul>
           <p class="content-description">Or you can write message for me with help form below</p>
-          <form class="form">
+          <form class="form" action="https://formspree.io/my.klever@gmail.com" method="POST">
             <input type="text" class="form-name"  placeholder="name" name="name" id="nameInput">
             <input type="text" class="form-email"  placeholder="email" name="email" id="emailInput">
             <textarea class="form-textarea"   placeholder="message" name="message" id="messageInput"></textarea>
-            <button  class="form-btn submit" id="send">send</button>
+            <input type="submit" id="send" class="form-btn submit"  value="send">
           </form>
        </section>
+
        <a href="clock.html">clock</a>
        <a href="simple_game.html">simple game</a>
    </div>
